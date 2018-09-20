@@ -1,0 +1,7 @@
+{
+  "name": "Ruuvitag_Station",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
