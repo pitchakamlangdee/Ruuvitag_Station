@@ -1,22 +1,17 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>
-      About
-    </ion-title>
+    <ion-title>Graphs</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content>
   <ion-list inset>
     <ion-item *ngFor="let sensor of sensors">
-      <p>  Mac Address : {{sensor.mac_id}}</p>
-      <h1>{{sensor.accel_X}}</h1>
-      <h1>{{sensor.accel_Y}}</h1>
-      <h1>{{sensor.accel_Z}}</h1>
-      <h1>{{sensor.humidity}}</h1>
-      <h1>{{sensor.pressure}}</h1>
-      <h1>{{sensor.temperature}}</h1>
-      <h1>{{sensor.Time_Stamp}}</h1>
+      <h1 align='center'> Mac Address : {{sensor.mac_id}}</h1>
+      <h1 align='center'> Humidity : {{sensor.humidity}}</h1>
+      <h1 align='center'> Pressure : {{sensor.pressure}}</h1>
+      <h1 align='center'> Temperature : {{sensor.temperature}}</h1>
+      <h1 align='center'> Time : {{sensor.Time_Stamp}}</h1>
     </ion-item>
   </ion-list>
 </ion-content>

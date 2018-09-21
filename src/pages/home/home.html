@@ -4,14 +4,25 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+<ion-content padding class="bg-image" *ngFor="let sensor_last of sensors_last">
+
+  <h1 align='center'>
+    <ion-icon color = "primary" name="bluetooth"></ion-icon> {{sensor_last.mac_id}}
+  </h1><br><br>
+  <h1 align='center'>
+    <ion-icon color = "danger"  name="thermometer"></ion-icon>    {{sensor_last.temperature}} ํC
+  </h1>
+  <br>
+  <h1 align='center'>
+    <ion-icon color = "water"   name="water"></ion-icon>    {{sensor_last.humidity}} %
+  </h1>
+  <br>
+  <h1 align='center'>
+    <ion-icon color = "secondary" name="leaf"></ion-icon>   {{sensor_last.pressure}} hPa
+  </h1>
+  <br><br><br>
+  <h1 align='center'>
+    <ion-icon name="clock"></ion-icon>    {{sensor_last.Time_Stamp}}
+  </h1>
+
 </ion-content>

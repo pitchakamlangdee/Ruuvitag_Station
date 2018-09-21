@@ -26,6 +26,16 @@ export class SensorsApiProvider {
     });
   }
 
+  getLastSensors() {
+    return new Promise(resolve => {
+      this.http.get(this.apiUrl +'/API_Last_Ruuvitag.php/').subscribe(data_last => {
+        resolve(data_last);
+      },
+        err => {
+          console.log(err);
+        });
+    });
+  }
 
 
 
